@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio - A showcase of my work and skills">
+    <title>Portfolio | Creative Developer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./src/styles/variables.css">
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/components.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Layout will be injected or structured here -->
+        <header id="main-header" class="glass-header">
+            <nav class="container">
+                <a href="#" class="logo">Techy.<span class="accent">Jose</span></a>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero" class="hero-section">
+                <div class="container hero-content">
+                    <h1 class="fade-in-up">Building <span class="gradient-text">Digital Experiences</span> that Matter.
+                    </h1>
+                    <p class="subtitle fade-in-up delay-1">Full Stack Developer & UI Enthusiast</p>
+                    <div class="cta-group fade-in-up delay-2">
+                        <a href="#projects" class="btn btn-primary">View Work</a>
+                        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <div class="container">
+                    <h2 class="section-title fade-in-up">Selected Works</h2>
+                    <div class="projects-grid">
+                        <!-- Project 1 -->
+                        <article class="project-card fade-in-up delay-1">
+                            <div class="project-image">
+                                <div class="placeholder-img"
+                                    style="background: linear-gradient(45deg, #2d2d2d, #1a1a1a);"></div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Neon Dashboard</h3>
+                                <p>A futuristic analytics dashboard focusing on data visualization and dark UI patterns.
+                                </p>
+                                <div class="tags">
+                                    <span>React</span>
+                                    <span>D3.js</span>
+                                    <span>CSS Modules</span>
+                                </div>
+                                <a href="#" class="link-arrow">View Project &rarr;</a>
+                            </div>
+                        </article>
+
+                        <!-- Project 2 -->
+                        <article class="project-card fade-in-up delay-2">
+                            <div class="project-image">
+                                <div class="placeholder-img"
+                                    style="background: linear-gradient(45deg, #1a1a1a, #2d2d2d);"></div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Zenith Commerce</h3>
+                                <p>Headless e-commerce solution with extreme performance and micro-interactions.</p>
+                                <div class="tags">
+                                    <span>Vue 3</span>
+                                    <span>Supabase</span>
+                                    <span>Stripe</span>
+                                </div>
+                                <a href="#" class="link-arrow">View Project &rarr;</a>
+                            </div>
+                        </article>
+
+                        <!-- Project 3 -->
+                        <article class="project-card fade-in-up delay-3">
+                            <div class="project-image">
+                                <div class="placeholder-img" style="background: linear-gradient(45deg, #333, #111);">
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Aura UI Kit</h3>
+                                <p>Open source component library built for accessibility and modern aesthetics.</p>
+                                <div class="tags">
+                                    <span>Web Components</span>
+                                    <span>Typescript</span>
+                                </div>
+                                <a href="#" class="link-arrow">View Project &rarr;</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section alt-bg">
+                <div class="container about-grid">
+                    <div class="about-text fade-in-up">
+                        <h2 class="section-title">About Me</h2>
+                        <div class="bio">
+                            <p>I'm a creative developer who bridges the gap between design and engineering. I care
+                                deeply about **user experience**, **performance**, and **accessibility**.</p>
+                            <p>With 5+ years of experience in the industry, I've helped startups and established brands
+                                launch digital products that users love.</p>
+                        </div>
+                        <ul class="skills-list">
+                            <li>JavaScript (ES6+)</li>
+                            <li>React / Vue</li>
+                            <li>Node.js</li>
+                            <li>UI/UX Design</li>
+                            <li>WebGL / Three.js</li>
+                        </ul>
+                    </div>
+                    <div class="about-visual fade-in-up delay-1">
+                        <!-- Abstract Visual or Photo -->
+                        <div class="visual-box">
+                            <div class="circle c1"></div>
+                            <div class="circle c2"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="container contact-wrapper">
+                    <div class="contact-content fade-in-up">
+                        <h2 class="section-title">Get in Touch</h2>
+                        <p>Have a project in mind or just want to say hi? My inbox is open.</p>
+                        <a href="mailto:hello@Techy.Jose" class="primary-email">hello@Techy.Jose</a>
+                    </div>
+
+                    <form class="contact-form fade-in-up delay-1" onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="Tell me about your project"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Techy.Jose. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
